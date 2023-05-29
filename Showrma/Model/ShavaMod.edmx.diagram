@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="ebf64691ac274fdeb5b6e8b10ab16bc0" Name="Diagram1">
+        <EntityTypeShape EntityType="ShavaModel.Client" Width="1.5" PointX="2.75" PointY="18.75" />
+        <EntityTypeShape EntityType="ShavaModel.ClientService" Width="1.5" PointX="5" PointY="8.75" />
+        <EntityTypeShape EntityType="ShavaModel.Color" Width="1.5" PointX="0.75" PointY="3.875" />
+        <EntityTypeShape EntityType="ShavaModel.CompositionOfSupply" Width="1.5" PointX="5.25" PointY="2.5" />
+        <EntityTypeShape EntityType="ShavaModel.Employee" Width="1.5" PointX="5.25" PointY="12.375" />
+        <EntityTypeShape EntityType="ShavaModel.Role" Width="1.5" PointX="0.75" PointY="10.875" />
+        <EntityTypeShape EntityType="ShavaModel.Service" Width="1.5" PointX="2.75" PointY="8.375" />
+        <EntityTypeShape EntityType="ShavaModel.Stock" Width="1.5" PointX="5.25" PointY="5" />
+        <EntityTypeShape EntityType="ShavaModel.Type" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="ShavaModel.User" Width="1.5" PointX="3" PointY="14.125" />
+        <EntityTypeShape EntityType="ShavaModel.ZakazShava" Width="1.5" PointX="3" PointY="3.125" />
+        <AssociationConnector Association="ShavaModel.FK_ClientService_Client" />
+        <AssociationConnector Association="ShavaModel.FK_ClientService_Service" />
+        <AssociationConnector Association="ShavaModel.FK_ZakazShava_Color" />
+        <AssociationConnector Association="ShavaModel.FK_CompositionOfSupply_ZakazShava" />
+        <AssociationConnector Association="ShavaModel.FK_Employee_Role" />
+        <AssociationConnector Association="ShavaModel.FK_Employee_User" />
+        <AssociationConnector Association="ShavaModel.FK_User_Role" />
+        <AssociationConnector Association="ShavaModel.FK_Stock_ZakazShava" />
+        <AssociationConnector Association="ShavaModel.FK_ZakazShava_Type" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
